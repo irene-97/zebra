@@ -1,4 +1,45 @@
-$sprites: ();
+$sprites: (
+	"cart": (
+		normal: (
+			x: 0,
+			y: 0,
+			width: 29,
+			height: 26,
+			image: "sprites.png",
+			total_width: 43,
+			total_height: 26,
+		),
+		retina: (
+			x: 0,
+			y: 0,
+			width: 58,
+			height: 52,
+			image: "sprites@2x.png",
+			total_width: 86,
+			total_height: 52,
+		),
+	),
+	"triangle": (
+		normal: (
+			x: 31,
+			y: 0,
+			width: 12,
+			height: 11,
+			image: "sprites.png",
+			total_width: 43,
+			total_height: 26,
+		),
+		retina: (
+			x: 62,
+			y: 0,
+			width: 24,
+			height: 22,
+			image: "sprites@2x.png",
+			total_width: 86,
+			total_height: 52,
+		),
+	),
+);
 
 @each $name in map-keys($sprites) {
 	.sprite-#{$name} {
