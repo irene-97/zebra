@@ -1,0 +1,83 @@
+.banner {
+	overflow: hidden;
+	margin-top: -86px;
+	height: 655px;
+
+	&__slider {
+		overflow: hidden;
+	}
+
+	&__slide {
+		position: relative;
+		width: 100%;
+		height: 655px;
+		text-align: center;
+
+		&__content {
+			position: absolute;
+			left: 50%;
+			bottom: 157px;
+			transform: translate(-50%);
+		}
+
+		&__text {
+			padding-bottom: 9px;
+			font-family: $font-family-helvetica-neue-cyr;
+			font-size: 22px;
+			line-height: 22px;
+			letter-spacing: 25px;
+			text-transform: uppercase;
+			color: $color-white;
+		}
+
+		&__title {
+			font-family: $font-family-impact;
+			font-weight: bold;
+			font-size: 117px;
+			line-height: 117px;
+			text-transform: uppercase;
+			color: $color-white;
+		}
+
+		&--1 {
+			background: url("../images/slide1.jpg") center no-repeat;
+			background-size: cover;
+		}
+
+		&--2 {
+			background: url("../images/slide2.jpg") center no-repeat;
+			background-size: cover;
+		}
+
+		&--3 {
+			background: url("../images/slide3.jpg") center no-repeat;
+			background-size: cover;
+		}
+
+		&--4 {
+			background: url("../images/slide4.jpg") center no-repeat;
+			background-size: cover;
+		}
+	}
+
+	.slick-arrow {
+		position: absolute;
+		top: 50%;
+		z-index: 2;
+		outline: none;
+		border: none;
+		font-size: 0;
+
+		&.slick-prev {
+			@include sprite("arrow-left");
+
+			left: 360px;
+		}
+
+		&.slick-next {
+			@include sprite("arrow-right");
+
+			right: 360px;
+		}
+	}
+}
