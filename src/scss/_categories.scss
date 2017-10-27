@@ -1,0 +1,138 @@
+.categories {
+	height: 560px;
+	text-align: center;
+	background: url("../images/categories.jpg") 0 0 no-repeat;
+	background-size: cover;
+
+	&__title {
+		padding: 60px 0 37px;
+		font-family: $font-family-josefin-slab;
+		font-size: 116px;
+		text-transform: uppercase;
+		color: $color-white;
+	}
+
+	&__links {
+		position: relative;
+		display: flex;
+		height: 303px;
+	}
+
+	&__bubble {
+		position: absolute;
+		display: block;
+		border-radius: 50%;
+		width: 199px;
+		height: 199px;
+		background: $color-viking;
+		opacity: 0.8;
+		transition: transform 0.3s ease-out;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+
+		&--1 {
+			left: 203px;
+			top: 34px;
+		}
+
+		&--2 {
+			right: 257px;
+			top: 2px;
+		}
+	}
+
+	&__link {
+		position: relative;
+		display: block;
+		border-radius: 50%;
+		width: 199px;
+		height: 199px;
+		background: rgba($color-viking, 0.8);
+		transition: transform 0.3s ease-out;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			display: block;
+			transform: translate(-50%, -50%);
+		}
+
+		&:hover {
+			transform: scale(1.1);
+		}
+
+		&--1 {
+			position: absolute;
+			left: 371px;
+			top: 0;
+
+			&::before {
+				@include sprite("shoe");
+			}
+		}
+
+		&--2 {
+			position: absolute;
+			left: 512px;
+			top: 76px;
+
+			&::before {
+				@include sprite("tshirt");
+			}
+		}
+
+		&--3 {
+			position: absolute;
+			left: 680px;
+			top: 13px;
+
+			&::before {
+				@include sprite("pants");
+			}
+		}
+
+		&--4 {
+			position: absolute;
+			left: 847px;
+			top: 41px;
+
+			&::before {
+				@include sprite("hat");
+			}
+		}
+
+		&--5 {
+			position: absolute;
+			right: 688px;
+			top: 75px;
+
+			&::before {
+				@include sprite("shoe");
+			}
+		}
+
+		&--6 {
+			position: absolute;
+			right: 537px;
+			top: 16px;
+
+			&::before {
+				@include sprite("tshirt");
+			}
+		}
+
+		&--7 {
+			position: absolute;
+			right: 390px;
+			top: 103px;
+
+			&::before {
+				@include sprite("umbrella");
+			}
+		}
+	}
+}
