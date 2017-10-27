@@ -1,0 +1,38 @@
+.footer {
+	padding-top: 24px;
+	padding-bottom: 7px;
+	font-size: 16px;
+	color: $color-white;
+	background: $color-mirage;
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__copyright {
+		padding-left: 16px;
+
+		&__text {
+			padding: 13px 0;
+
+			a {
+				margin-left: 8px;
+				outline: none;
+				color: $color-white;
+			}
+		}
+	}
+
+	&__links {
+		margin-right: 15px;
+
+		&__link {
+			margin-right: 43px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}

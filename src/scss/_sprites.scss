@@ -1,6 +1,26 @@
 $sprites: (
 	"arrow-left": (
 		normal: (
+			x: 363,
+			y: 0,
+			width: 43,
+			height: 149,
+			image: "sprites.png",
+			total_width: 406,
+			total_height: 299,
+		),
+		retina: (
+			x: 726,
+			y: 0,
+			width: 86,
+			height: 298,
+			image: "sprites@2x.png",
+			total_width: 812,
+			total_height: 598,
+		),
+	),
+	"arrow-right": (
+		normal: (
 			x: 318,
 			y: 0,
 			width: 43,
@@ -19,30 +39,10 @@ $sprites: (
 			total_height: 598,
 		),
 	),
-	"arrow-right": (
-		normal: (
-			x: 363,
-			y: 0,
-			width: 43,
-			height: 149,
-			image: "sprites.png",
-			total_width: 406,
-			total_height: 299,
-		),
-		retina: (
-			x: 726,
-			y: 0,
-			width: 86,
-			height: 298,
-			image: "sprites@2x.png",
-			total_width: 812,
-			total_height: 598,
-		),
-	),
 	"cart-white": (
 		normal: (
 			x: 363,
-			y: 151,
+			y: 213,
 			width: 29,
 			height: 26,
 			image: "sprites.png",
@@ -51,7 +51,7 @@ $sprites: (
 		),
 		retina: (
 			x: 726,
-			y: 302,
+			y: 426,
 			width: 58,
 			height: 52,
 			image: "sprites@2x.png",
@@ -62,7 +62,7 @@ $sprites: (
 	"cart": (
 		normal: (
 			x: 363,
-			y: 179,
+			y: 185,
 			width: 29,
 			height: 26,
 			image: "sprites.png",
@@ -71,9 +71,29 @@ $sprites: (
 		),
 		retina: (
 			x: 726,
-			y: 358,
+			y: 370,
 			width: 58,
 			height: 52,
+			image: "sprites@2x.png",
+			total_width: 812,
+			total_height: 598,
+		),
+	),
+	"fb": (
+		normal: (
+			x: 363,
+			y: 241,
+			width: 15,
+			height: 32,
+			image: "sprites.png",
+			total_width: 406,
+			total_height: 299,
+		),
+		retina: (
+			x: 726,
+			y: 482,
+			width: 30,
+			height: 64,
 			image: "sprites@2x.png",
 			total_width: 812,
 			total_height: 598,
@@ -119,6 +139,26 @@ $sprites: (
 			total_height: 598,
 		),
 	),
+	"rss": (
+		normal: (
+			x: 363,
+			y: 151,
+			width: 31,
+			height: 32,
+			image: "sprites.png",
+			total_width: 406,
+			total_height: 299,
+		),
+		retina: (
+			x: 726,
+			y: 302,
+			width: 62,
+			height: 64,
+			image: "sprites@2x.png",
+			total_width: 812,
+			total_height: 598,
+		),
+	),
 	"shoe": (
 		normal: (
 			x: 212,
@@ -142,7 +182,7 @@ $sprites: (
 	"triangle": (
 		normal: (
 			x: 394,
-			y: 151,
+			y: 185,
 			width: 12,
 			height: 11,
 			image: "sprites.png",
@@ -151,7 +191,7 @@ $sprites: (
 		),
 		retina: (
 			x: 788,
-			y: 302,
+			y: 370,
 			width: 24,
 			height: 22,
 			image: "sprites@2x.png",
@@ -174,6 +214,26 @@ $sprites: (
 			y: 0,
 			width: 228,
 			height: 220,
+			image: "sprites@2x.png",
+			total_width: 812,
+			total_height: 598,
+		),
+	),
+	"tw": (
+		normal: (
+			x: 212,
+			y: 74,
+			width: 44,
+			height: 32,
+			image: "sprites.png",
+			total_width: 406,
+			total_height: 299,
+		),
+		retina: (
+			x: 424,
+			y: 148,
+			width: 88,
+			height: 64,
 			image: "sprites@2x.png",
 			total_width: 812,
 			total_height: 598,
