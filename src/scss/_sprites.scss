@@ -39,7 +39,7 @@ $sprites: (
 			total_height: 598,
 		),
 	),
-	"cart": (
+	"cart-white": (
 		normal: (
 			x: 363,
 			y: 151,
@@ -52,6 +52,26 @@ $sprites: (
 		retina: (
 			x: 726,
 			y: 302,
+			width: 58,
+			height: 52,
+			image: "sprites@2x.png",
+			total_width: 812,
+			total_height: 598,
+		),
+	),
+	"cart": (
+		normal: (
+			x: 363,
+			y: 179,
+			width: 29,
+			height: 26,
+			image: "sprites.png",
+			total_width: 406,
+			total_height: 299,
+		),
+		retina: (
+			x: 726,
+			y: 358,
 			width: 58,
 			height: 52,
 			image: "sprites@2x.png",

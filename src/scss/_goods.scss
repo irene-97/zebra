@@ -1,0 +1,115 @@
+.goods {
+	padding-bottom: 49px;
+
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	&__col-left {
+		padding-left: 55px;
+		width: 620px;
+	}
+
+	&__col-right {
+	}
+
+	&__label {
+		margin-top: -14px;
+		margin-bottom: 48px;
+		margin-left: -35px;
+	}
+
+	&__title {
+		font-weight: bold;
+		font-size: 50px;
+	}
+
+	&__description {
+		padding: 13px 0 27px;
+		font-weight: $font-family-helvetica-cyr-upright;
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	&__wrapper {
+		display: flex;
+	}
+
+	&__rate {
+		margin-top: 18px;
+		font-weight: bold;
+		font-size: 36px;
+
+		&::before {
+			content: "Rate:";
+			padding-right: 12px;
+			font-weight: 400;
+		}
+	}
+
+	&__button {
+		margin-left: 92px;
+		outline: none;
+		border: none;
+		padding: 10px 25px 4px;
+		font-size: 28px;
+		color: $color-white;
+		background: $color-alizarin-crimson;
+		transition: background 0.1s ease;
+
+		&::before {
+			@include sprite("cart-white");
+
+			content: "";
+			margin-top: -9px;
+			margin-right: 11px;
+			margin-left: -12px;
+		}
+
+		&:hover {
+			background: darken($color-alizarin-crimson, 8%);
+		}
+	}
+
+	&__image {
+		overflow: hidden;
+
+		img {
+			display: block;
+		}
+	}
+
+	&__preview-slider {
+		display: flex;
+		flex-basis: 100%;
+		margin-top: 76px;
+	}
+
+	&__preview-slide {
+		margin: 0 12px 12px;
+		width: calc(#{percentage(1 / 5)} - 24px);
+		font-size: 16px;
+		line-height: 19px;
+		text-align: center;
+		text-decoration: none;
+		color: $color-cod-gray;
+
+		img {
+			transition: outline 0.5s ease;
+
+			&:hover {
+				outline: solid 1px $color-geraldine;
+			}
+		}
+
+		&__title {
+			margin-top: 7px;
+		}
+
+		&:focus {
+			outline: none;
+		}
+	}
+}
