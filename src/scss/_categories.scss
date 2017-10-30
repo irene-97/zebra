@@ -1,4 +1,5 @@
 .categories {
+	overflow: hidden;
 	height: 560px;
 	text-align: center;
 	background: url("../images/categories.jpg") 0 0 no-repeat;
@@ -10,12 +11,29 @@
 		font-size: 116px;
 		text-transform: uppercase;
 		color: $color-white;
+
+		@media (max-width: 743px) {
+			font-size: 73px;
+		}
+
+		@media (max-width: 500px) {
+			font-size: 39px;
+		}
 	}
 
 	&__links {
 		position: relative;
-		display: flex;
+		margin: 0 auto;
 		height: 303px;
+		max-width: 1064px;
+
+		@media (max-width: 1220px) {
+			display: flex;
+			align-items: flex-start;
+			flex-wrap: wrap;
+			justify-content: center;
+			height: auto;
+		}
 	}
 
 	&__bubble {
@@ -33,18 +51,22 @@
 		}
 
 		&--1 {
-			left: 203px;
+			left: -225px;
 			top: 34px;
 		}
 
 		&--2 {
-			right: 257px;
+			right: -171px;
 			top: 2px;
+		}
+
+		@media (max-width: 1220px) {
+			display: none;
 		}
 	}
 
 	&__link {
-		position: relative;
+		position: absolute;
 		display: block;
 		border-radius: 50%;
 		width: 199px;
@@ -66,8 +88,7 @@
 		}
 
 		&--1 {
-			position: absolute;
-			left: 371px;
+			left: -57px;
 			top: 0;
 
 			&::before {
@@ -76,8 +97,7 @@
 		}
 
 		&--2 {
-			position: absolute;
-			left: 512px;
+			left: 84px;
 			top: 76px;
 
 			&::before {
@@ -86,8 +106,7 @@
 		}
 
 		&--3 {
-			position: absolute;
-			left: 680px;
+			left: 252px;
 			top: 13px;
 
 			&::before {
@@ -96,8 +115,7 @@
 		}
 
 		&--4 {
-			position: absolute;
-			left: 847px;
+			left: 419px;
 			top: 41px;
 
 			&::before {
@@ -106,8 +124,7 @@
 		}
 
 		&--5 {
-			position: absolute;
-			right: 688px;
+			right: 260px;
 			top: 75px;
 
 			&::before {
@@ -116,8 +133,7 @@
 		}
 
 		&--6 {
-			position: absolute;
-			right: 537px;
+			right: 109px;
 			top: 16px;
 
 			&::before {
@@ -126,13 +142,24 @@
 		}
 
 		&--7 {
-			position: absolute;
-			right: 390px;
+			right: -38px;
 			top: 103px;
 
 			&::before {
 				@include sprite("umbrella");
 			}
 		}
+
+		@media (max-width: 1220px) {
+			position: relative;
+			left: auto;
+			right: auto;
+			top: auto;
+			margin: 10px;
+		}
+	}
+
+	@media (max-width: 1220px) {
+		height: auto;
 	}
 }
